@@ -29,5 +29,6 @@ This app uses Natural Language Processing (NLP) techniques and OCR for processin
 - **Backend**: Node.js and Express 
 - **OCR**: Tesseract.js 
 - **Text Simplification API**: Google Gemini Flash 1.5
+- **Cloud Provider**: Google Cloud
 
 ---
