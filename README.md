@@ -9,6 +9,7 @@ This app uses Natural Language Processing (NLP) techniques and OCR for processin
 ## Table of Contents
 1. [Features](#features)
 2. [Tech Stack](#tech-stack)
+3. [Future Work](#future-work)
 
 
 ---
@@ -25,10 +26,25 @@ This app uses Natural Language Processing (NLP) techniques and OCR for processin
 ---
 
 ## Tech Stack
-- **Frontend**: React Native, React Navigation
-- **Backend**: Node.js and Express 
-- **OCR**: Tesseract.js 
-- **Text Simplification API**: Google Gemini Flash 1.5
+- **Frontend**: React Native,
+    •	Wink-NLP:  To implement sentiment analysis on the submitted document
+    •	React-Native-Paper: UI Library to make everything a tad bit more user friendly
+    •	Expo-speech: Text To Speech tool to read out the simplified document
+    •	React-Native-Markdown-Renderer: Renders the returned document in markdown for easy reading .
+
+- **Backend**: Node.js and Express
+    •	Multer: Used to upload large files such as images and PDF’s like we are doing.
+    •	tesseract.js: Scans in an image and returns the text for us to parse
+    •	Spellchecker: Fix any common spelling mistakes made by the tesseract.js.
+    •	@google/generative-ai: Googles LLM model library to interact with Gemini (1.5 Flash)
+    •	pdf-parse:  To parse any of the text out of any pdf uploaded.
+
 - **Cloud Provider**: Google Cloud
 
 ---
+
+## Future Work
+
+For future plans, I would prefer to move away from hosted LLM services and try using OLlama to run a local model myself. This is mainly because I would like to try fine-tuning the model myself along with implementing an agent framework such as the bee-agent to handle tooling with better error handling.
+
+YouTube Demo :
