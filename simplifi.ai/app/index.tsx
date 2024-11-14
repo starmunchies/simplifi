@@ -56,8 +56,7 @@ export default function OnBoarding() {
       <Collapsible title="AI-Powered Simplification">
         <ThemedText>
           Our advanced AI engine, Google Gemini, simplifies the language of your documents, making
-          it accessible for everyone, including those with reading disabilities, intellectual disabilities,
-          dyslexia, or limited language proficiency.
+          it accessible for everyone.
         </ThemedText>
       </Collapsible>
 
@@ -65,10 +64,6 @@ export default function OnBoarding() {
         <ThemedText>
           Simplifi.ai is designed to help individuals with various needs:
         </ThemedText>
-        <ThemedText>- Reading disabilities</ThemedText>
-        <ThemedText>- Intellectual disabilities</ThemedText>
-        <ThemedText>- Dyslexia</ThemedText>
-        <ThemedText>- Non-native speakers</ThemedText>
         <ThemedText>
           Our mission is to make information accessible to everyone, regardless of their reading
           or language skills.
