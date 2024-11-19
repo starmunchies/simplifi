@@ -44,7 +44,6 @@ This app uses Natural Language Processing (NLP) techniques and OCR for processin
 ---
 
 ## Future Work
+Looking ahead, I plan to move away from hosted LLM services and explore running local models through services such as OLlama. While I currently lack the necessary hardware for local fine-tuning, I’m exploring services like Runpod to handle this process. Fine-tuning would enable me to better tailor the models to user needs as well as experiment with agent frameworks such as bee-agent to enhance the tooling and error handling of LLMs.
 
-For future plans, I would prefer to move away from hosted LLM services and try using OLlama to run a local model myself. This is mainly because I would like to try fine-tuning the model myself along with implementing an agent framework such as the bee-agent to handle tooling with better error handling.
-
-YouTube Demo :
+YouTube Demo : https://youtube.com/shorts/5T0mWcr-nx8?feature=share
