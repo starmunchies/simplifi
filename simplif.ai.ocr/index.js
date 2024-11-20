@@ -101,11 +101,6 @@ app.post("/ocr/pdf", upload.single("pdf"), async (req, res) => {
       const data = await pdf(pdfBuffer);
 
       const text = processExtractedText(data.text);
-
-      // number of pages
-      //console.log(data.numpages);
-      // number of rendered pages
-      //console.log(data.numrender);
       // PDF info
       console.log(data.info);
       // PDF metadata
@@ -113,18 +108,7 @@ app.post("/ocr/pdf", upload.single("pdf"), async (req, res) => {
         console.log(data.metadata);
       }
 
-      // PDF.js version
-      // check https://mozilla.github.io/pdf.js/getting_started/
-      //console.log(data.version);
-      // PDF text
-      //console.log(text);
-
-      // Example: Extract text from first page
-      //const firstPage = pdfDoc.getPage(0);
-      //const textContent = await firstPage.get;
-      //const text = textContent.items.map(item => item.str).join(' ');
-
-      //console.log(text)
+      
       // Respond with text extracted from the PDF (or do other processing) */
       const test = await AIprompt(text);
       res.status(200).json({ data: test, cancelled: false });
